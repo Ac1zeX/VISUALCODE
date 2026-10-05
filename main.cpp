@@ -1,4 +1,6 @@
 #include <iostream>
+#include <thread>
+
 
 int main() {
     double temp;
@@ -16,5 +18,6 @@ int main() {
         else {
             std::cout << "NORMAL";
         }
+    std::this_thread::sleep_for (std::chrono::seconds(10));
     return 0;
 }
